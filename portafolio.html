@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+
+<head>
+    <title> portfolio </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Marcio">
+    <meta name="description" content="lista documentos">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="css/css2.css">
+    <style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+  float: left;
+  padding: 5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(76, 0, 255);
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: rgb(76, 0, 255);
+  color: black;
+}
+</style>
+
+</head>
+
+<body>
+    <div id="principal">
+        <header class="header-logo">
+            <a href="indexspa.html"><img class="logo" src="imagens/logo.png" alt="logo fashion"> </a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="quienessomos.html">Quienes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="nav2">   
+                <div class="lang-menu">
+                    <div class="selected-lang">
+                    <img  class="bandeira" src="imagens/card_01.jpg" alt="bandeira">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="portafolio.html" class="ar">Español</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="en">Portugués</a>
+                        </li>
+                        <li>
+                            <a href="prtfolio.html" class="fr">Inglés</a>
+                        </li>
+                        <li>
+                            <a href="pprtfolio.html" class="it">Italiano</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+
+        </header>
+        
+
+        <div>
+          <H1>
+
+            <div class="waviy">
+   <span style="--i:1">P</span>
+   <span style="--i:2">O</span>
+   <span style="--i:3">R</span>
+   <span style="--i:4">T</span>
+   <span style="--i:5">A</span>
+   <span style="--i:6">F</span>
+   <span style="--i:7">O</span>
+   <span style="--i:8">L</span>
+   <span style="--i:9">I</span>
+   <span style="--i:10">O</span>
+  </div>
+</H1>
+            <p1><b>Revolucionar el ecosistema de la moda
+                <br>con inteligencia</b></p1>
+        </DIV>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="./imagens/modelo1.jpg" style="width:100%" alt="sobretudo masculino cinza de frente (fechado)">
+  </div>
+
+  <div class="mySlides1">
+    <img src="./imagens/modelo1-1.jpg" style="width:100%" alt="sobretudo masculino cinza de frente (aberto)">
+  </div>
+
+  <div class="mySlides1">
+    <img src="./imagens/modelo1-2.jpg" style="width:100%" alt="sobretudo masculino cinza de costas (fechado)">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="./imagens/modelo2.jpg" style="width:100%" alt="jaqueta feminina preta rock de frente">
+  </div>
+
+  <div class="mySlides2">
+    <img src="./imagens/modelo2-1.jpg" style="width:100%" alt="jaqueta feminina preta rock de costas">
+  </div>
+
+  <div class="mySlides2">
+    <img src="./imagens/modelo2-2.jpg" style="width:100%" alt="jaqueta feminina preta rock de lado">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="./imagens/modelo3.jpg" style="width:100%" alt="jaqueta feminina preta de couro de frente">
+  </div>
+
+  <div class="mySlides3">
+    <img src="./imagens/modelo3-1.jpg" style="width:100%" alt="jaqueta feminina preta de couro de costas">
+  </div>
+
+  <div class="mySlides3">
+    <img src="./imagens/modelo3-2.jpg" style="width:100%" alt="jaqueta feminina preta de couro de lado">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <article class="qq">
+            <img src="imagens/frame.png" alt="QR code">
+
+        </article>
+        
+
+
+
+    </div>
+
+    <footer class="rodape">
+        <p>Copyright &copy; fastfashion  Comercio Digital LTDA.</p>
+
+    </footer>
+
+
+
+    </main>
+
+
+</body>
+
+
+</html>
