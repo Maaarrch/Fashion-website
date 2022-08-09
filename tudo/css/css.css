@@ -20,15 +20,14 @@ body{
   
 }
 
-
-
-
 .header-logo{
 height: 70px;
-width: 89%;
-background: rgb(16, 20, 28);
-position: fixed;
+width: 100%;
+background-color: rgb(16, 20, 28);
+position: relative;
+
 }
+
 
 
 .logo{
@@ -218,6 +217,9 @@ color: rgb(123,142,180);
 text-align: center;
 letter-spacing: 1.5px;
 }
+
+
+
 
 .nav2{
 position: absolute;
